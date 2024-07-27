@@ -4,41 +4,28 @@
 }
 
 h1{
-  font-size: 9rem !important;
+  font-size: 9em !important;
   font-family:var(--font-body);
   font-weight: 700;
   line-height: 115%;
 }
 
-
-h2{
-  font-size: 4rem !important;
-  font-family:var(--font-body);
-  line-height: 125%;
-  font-weight: 300;
-
-}
 h3{
-  font-size: 3rem !important;
+  font-size: 3em !important;
   font-family:var(--font-body);
   line-height: 125%;
   font-weight: 300;
 }
-h4{
-  font-size: 2.5rem !important;
-  font-family:var(--font-body);
-  line-height: 125%;
-  font-weight: 300;
-}
+
 h5{
-  font-size: 2rem !important;
+  font-size: 2em;
   font-family:var(--font-body);
   line-height: 125%;
   font-weight: 300;
 }
 
 p{
-  font-size: 1rem !important;
+  font-size: 15px;
   font-family:var(--font-body);
   line-height: 150%;
 }
@@ -69,4 +56,5 @@ figure,
 p,
 pre {
   margin: 0;
+  min-width: 0;
 }
