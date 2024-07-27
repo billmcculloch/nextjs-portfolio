@@ -1,0 +1,40 @@
+.wrapper {
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+  color: #d9cfbe;
+  .text {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    h5 {
+      padding-right: 50%;
+    }
+  }
+  .cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    .arrow {
+      filter: invert(94%) sepia(9%) saturate(440%) hue-rotate(353deg)
+        brightness(91%) contrast(86%);
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .text {
+      width: 100%;
+    }
+    .image {
+      margin-right: auto;
+    }
+  }
+}
