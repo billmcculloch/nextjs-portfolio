@@ -38,7 +38,6 @@ function Hero() {
           />
           <h1>Bill McCulloch</h1>
         </div>
-
         <h5>I like to build things and occasionally access the mainframe.</h5>
       </div>
       <div className={s.cta} onClick={() => scrollTo("work")}>
