@@ -1,32 +1,24 @@
 .wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  height: 100%;
+  padding: 45px;
   background-color: #f6f7f8;
 }
 
-.content {
-  padding: 50px;
+.container {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
 }
 
-.animation {
-  margin-right: 40px;
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 @media only screen and (max-width: 700px) {
-  .wrapper {
-    flex-wrap: wrap;
+  .container {
     flex-direction: column;
-    gap: 30px;
-    height: 100%;
-  }
-  .content {
-    width: 90%;
-    padding: 30px;
   }
 }
