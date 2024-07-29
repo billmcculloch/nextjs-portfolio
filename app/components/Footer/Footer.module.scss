@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 45px 20vh 45px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    flex-wrap: wrap !important;
+    padding-top: 50px;
+    @media screen and (max-width: 800px) {
+      gap: 40px;
+      flex-direction: column;
+    }
+    div {
+      width: fit-content;
+    }
+  }
+}

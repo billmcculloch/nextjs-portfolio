@@ -7,6 +7,7 @@ interface ProjectProps {
   name: string;
   description: string;
   image: StaticImageData;
+  hideDivider?: boolean;
   tech: {
     key: string;
     name: string;
@@ -14,16 +15,26 @@ interface ProjectProps {
   }[];
 }
 
-function Project({ name, description, tech, image }: ProjectProps) {
+function Project({
+  name,
+  description,
+  tech,
+  image,
+  hideDivider = false,
+}: ProjectProps) {
   return (
     <div className={s.wrapper}>
       <Image src={image} alt="image" className={s.imageSrc} />
-      {tech?.map((t) => {
-        return <TechBubble key={t.key} name={t.name} variant={t.variant} />;
-      })}
+      <div className={s.tech}>
+        {tech?.map((t) => {
+          return <TechBubble key={t.key} name={t.name} variant={t.variant} />;
+        })}
+      </div>
+
       <div className={s.text}>
         <h6>{name}</h6>
         <p>{description}</p>
+        {!hideDivider && <div className={s.divider} />}
       </div>
     </div>
   );

@@ -2,7 +2,8 @@
   height: 100%;
   background-color: #f6f7f8;
   color: #0c0a34;
-  padding: 60px 45px;
+  padding: 0px 45px;
+  padding-bottom: 100px;
 }
 
 .container {
@@ -22,7 +23,7 @@
 
 @media only screen and (max-width: 800px) {
   .wrapper {
-    padding: 45px;
+    padding: 30px 45px 100px 35px;
   }
   .container {
     flex-direction: column;

@@ -14,20 +14,76 @@ function Work() {
           <Project
             image={broadoaks}
             name="Broadoaks Retreat"
-            description="Corporate off-site retreat in Waikanae, New Zealand"
-            tech={[{ key: "1", name: "Next.js", variant: "frontEnd" }]}
+            description="Website build for corporate off-site retreat including fetching up-to-date booking information from AirBnb. "
+            tech={[
+              {
+                key: "bo-1",
+                name: "Next.js",
+                variant: "frontEnd",
+              },
+              {
+                key: "bo-2",
+                name: "Typescript",
+                variant: "frontEnd",
+              },
+              {
+                key: "bo-3",
+                name: "Sass",
+                variant: "frontEnd",
+              },
+              {
+                key: "bo-4",
+                name: "shadcn/ui",
+                variant: "frontEnd",
+              },
+            ]}
           />
           <Project
             image={roady}
             name="Roady"
-            description="Helping travellers find local knowledge, wherever they are."
-            tech={[{ key: "1", name: "Flutter", variant: "frontEnd" }]}
+            description="Built a mobile and web app to help travellers find local knowledge, wherever they are."
+            tech={[
+              { key: "ro-1", name: "Flutter", variant: "frontEnd" },
+              {
+                key: "ro-2",
+                name: "React",
+                variant: "frontEnd",
+              },
+              {
+                key: "ro-3",
+                name: "Typescript",
+                variant: "frontEnd",
+              },
+              {
+                key: "ro-4",
+                name: "Node.js",
+                variant: "backEnd",
+              },
+              {
+                key: "ro-5",
+                name: "GraphQL",
+                variant: "backEnd",
+              },
+            ]}
           />
           <Project
+            hideDivider
             image={portfolio}
             name="This very site"
-            description="Handmade with Next.js"
-            tech={[{ key: "1", name: "Next.js", variant: "frontEnd" }]}
+            description="Hand crafted by yours truly with Next.js."
+            tech={[
+              { key: "pf-1", name: "Next.js", variant: "frontEnd" },
+              {
+                key: "pf-2",
+                name: "Typescript",
+                variant: "frontEnd",
+              },
+              {
+                key: "pf-3",
+                name: "Sass",
+                variant: "frontEnd",
+              },
+            ]}
           />
         </div>
       </div>
