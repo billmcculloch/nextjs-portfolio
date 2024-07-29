@@ -12,6 +12,7 @@ function Work() {
         <p>Both commercial and personal projects I'm proud to show you.</p>
         <div className={s.projects}>
           <Project
+            href="https://www.broadoaksretreat.co.nz/"
             image={broadoaks}
             name="Broadoaks Retreat"
             description="Website build for corporate off-site retreat including fetching up-to-date booking information from AirBnb. "
@@ -39,6 +40,7 @@ function Work() {
             ]}
           />
           <Project
+            href="https://apps.apple.com/nz/app/roady/id1614907429"
             image={roady}
             name="Roady"
             description="Built a mobile and web app to help travellers find local knowledge, wherever they are."
@@ -70,7 +72,7 @@ function Work() {
             hideDivider
             image={portfolio}
             name="This very site"
-            description="Hand crafted by yours truly with Next.js."
+            description="Hand crafted by yours truly with Next.js and its App Router."
             tech={[
               { key: "pf-1", name: "Next.js", variant: "frontEnd" },
               {

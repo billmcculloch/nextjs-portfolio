@@ -9,9 +9,12 @@ function Footer() {
     <div className={s.wrapper}>
       <h5>Get in touch</h5>
       <div className={s.container}>
-        <LinkButton onClick={() => {}} label="Email" />
-        <LinkButton onClick={() => {}} label="LinkedIn" />
-        <LinkButton onClick={() => {}} label="GitHub" />
+        <LinkButton href={"mailto:billrmcculloch@gmail.com"} label="Email" />
+        <LinkButton
+          href={"https://www.linkedin.com/in/bill-mcculloch/"}
+          label="LinkedIn"
+        />
+        <LinkButton href={"https://github.com/billmcculloch"} label="GitHub" />
       </div>
     </div>
   );

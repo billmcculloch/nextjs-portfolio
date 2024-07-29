@@ -3,13 +3,17 @@ import TechBubble from "../TechBubble";
 import s from "./Current.module.scss";
 import logoSrc from "../../../public/guider-logo.png";
 import imageSrc from "../../../public/spain.jpg";
+import Link from "next/link";
 
 function Current() {
   return (
     <div className={s.wrapper} id="work">
       <div className={s.container}>
         <div className={s.content}>
-          <Image src={logoSrc} alt="Guider Logo" width={200} />
+          <Link href={"https://guider-ai.com/"} target={"_blank"}>
+            <Image src={logoSrc} alt="Guider Logo" width={200} />
+          </Link>
+
           <h5>I&apos;m currently a Mid Front-end Engineer at Guider.</h5>
           <p>
             Based in London, I&apos;m helping to build the future of

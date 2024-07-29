@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import s from "./Hero.module.scss";
-
 import profile from "../../../public/profile.jpg";
-import LinkButton from "../LinkButton";
+import ArrowButton from "../ArrowButton";
 
 function Hero() {
   function scrollTo(id: string) {
@@ -41,7 +40,7 @@ function Hero() {
           </div>
           <h5>I like to build things and occasionally access the mainframe.</h5>
         </div>
-        <LinkButton
+        <ArrowButton
           label="See what I've been upto"
           onClick={() => scrollTo("work")}
         />

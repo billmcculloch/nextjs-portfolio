@@ -1,25 +1,24 @@
 import React from "react";
-import s from "./LinkButton.module.scss";
+import s from "./ArrowButton.module.scss";
 import Image from "next/image";
 import arrow from "../../../public/arrow.svg";
-import Link from "next/link";
 
-interface LinkButtonProps {
+interface ArrowButtonProps {
   variant?: "light" | "dark";
   label: string;
-  href: string;
+  onClick: React.MouseEventHandler<HTMLDivElement> | undefined;
 }
 
-function LinkButton({ label, href, variant = "light" }: LinkButtonProps) {
+function LinkButton({ label, onClick, variant = "light" }: ArrowButtonProps) {
   return (
-    <Link className={s.btn} href={href} target="_blank">
+    <div className={s.btn} onClick={onClick} content="button">
       <p>{label}</p>
       <Image
         src={arrow}
         alt="arrow"
         className={variant === "light" ? s.arrow : s.arrowDark}
       />
-    </Link>
+    </div>
   );
 }
 

@@ -7,7 +7,7 @@
 }
 .divider {
   display: none;
-  padding-top: 15px;
+  padding-top: 20px;
   border-bottom: 1px solid #ebebeb;
   @media screen and (max-width: 800px) {
     display: block;
@@ -17,6 +17,7 @@
 .tech {
   display: flex;
   gap: 4px;
+  padding-top: 10px;
 }
 
 .imageSrc {

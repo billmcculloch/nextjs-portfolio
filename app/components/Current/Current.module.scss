@@ -15,11 +15,11 @@
 }
 
 .tech {
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
   padding-right: 10%;
-  margin-bottom: 10px;
 }
 .content {
   display: flex;
@@ -30,10 +30,14 @@
 
 @media only screen and (max-width: 800px) {
   .wrapper {
-    padding: 30px 45px 30px 35px;
+    height: 100%;
+    padding: 60px 45px 20px 45px;
   }
   .container {
     flex-direction: column;
+  }
+  .content {
+    width: 100%;
   }
   .tech {
     padding-right: 10%;
