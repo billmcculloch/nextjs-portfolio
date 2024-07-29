@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 export const metadata: Metadata = {
   title: "Bill McCulloch",
   description:
-    "Connect & Collaborate in Kapiti. Corporate offsite retreat just 40 minutes from Wellington",
+    "A showcase of my previous experience in both commercial and personal projects. ",
 };
 
 const body = Poppins({

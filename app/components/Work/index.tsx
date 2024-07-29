@@ -9,7 +9,7 @@ function Work() {
     <div className={s.wrapper}>
       <div className={s.container}>
         <h5>Other work</h5>
-        <p>Both commercial and personal projects I'm proud to show you.</p>
+        <p>Both commercial and personal projects I&apos;m proud to show you.</p>
         <div className={s.projects}>
           <Project
             href="https://www.broadoaksretreat.co.nz/"
