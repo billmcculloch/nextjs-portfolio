@@ -27,7 +27,7 @@ function Hero() {
           priority
         />
         <div className={s.text}>
-          <h3>Hello, I'm</h3>
+          <h3>Hello, I&apos;m</h3>
           <div className={s.hero}>
             <Image
               src={profile}

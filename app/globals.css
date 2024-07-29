@@ -28,6 +28,12 @@ h5{
   line-height: 125%;
   font-weight: 300;
 }
+h6{
+  font-size: 1.35em;
+  font-family:var(--font-body);
+  line-height: 125%;
+  font-weight: 300;
+}
 
 p{
   font-size: 15px;

@@ -2,22 +2,28 @@
   height: 100%;
   background-color: #f6f7f8;
   color: #0c0a34;
-  padding: 60px 45px;
+  padding: 80px 45px;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
-  gap: 30px;
+  align-items: center;
+  gap: 40px;
 }
 
-.projects {
+.tech {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-right: 30%;
+  margin-bottom: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -27,11 +33,7 @@
   .container {
     flex-direction: column;
   }
-  .projects {
-    flex-direction: column;
-    gap: 40px;
-    div {
-      width: 100%;
-    }
+  .tech {
+    padding-right: 5%;
   }
 }
