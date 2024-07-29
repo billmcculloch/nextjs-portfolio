@@ -72,7 +72,7 @@ function Work() {
             hideDivider
             image={portfolio}
             name="This very site"
-            description="Hand crafted by yours truly with Next.js and its App Router."
+            description="Hand crafted with Next.js and Typescript."
             tech={[
               { key: "pf-1", name: "Next.js", variant: "frontEnd" },
               {
