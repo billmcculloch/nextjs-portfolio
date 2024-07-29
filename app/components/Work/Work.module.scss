@@ -12,6 +12,13 @@
   gap: 40px;
 }
 
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-right: 30%;
+  margin-bottom: 30px;
+}
 .content {
   display: flex;
   flex-direction: column;

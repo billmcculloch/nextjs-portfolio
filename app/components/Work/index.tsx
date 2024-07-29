@@ -1,34 +1,41 @@
 "use client";
 
-import s from "./Work.module.scss";
 import Image from "next/image";
-
-import imageSrc from "../../../public/guider.webp";
-import { useEffect, useRef } from "react";
+import LinkButton from "../LinkButton";
+import TechBubble from "../TechBubble";
+import s from "./Work.module.scss";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import logoSrc from "../../../public/guider-logo.png";
 
 function Work() {
   return (
     <div className={s.wrapper} id="work">
       <div className={s.container}>
         <div className={s.content}>
-          <h5>Currently, I'm a Mid Front-end Engineer at Guider.</h5>
+          <Image src={logoSrc} alt="Guider Logo" width={300} />
+          <h5>I'm a Mid Front-end Engineer at Guider.</h5>
           <p>
             Based in London, I'm helping to build the future of peer-to-peer
-            learning.
+            learning. Guider is an enterprise mentoring platform used by
+            organizations around the world including LVMH, Deloitte and
+            Specsavers.
           </p>
-          <p>
-            Set on one hectare of lush gardens, we aim to provide the perfect
-            space to connect, collaborate and, importantly, have fun. We cater
-            for off-site meetings, day retreats and overnight stays for up to 11
-            guests. We also have team events covered, with plenty of space for
-            lawn games, tennis and relaxing by the pool.
-          </p>
-          <p>
-            Located just outside of Waikanae, on the beautiful Kapiti Coast,
-            Broadoaks Retreat is easily accessible from both Wellington and
-            Palmerston North.
-          </p>
+          <div className={s.tech}>
+            <TechBubble name="React" variant="frontEnd" />
+            <TechBubble name="Typescript" variant="frontEnd" />
+            <TechBubble name="Redux" variant="frontEnd" />
+            <TechBubble name="REST API" variant="backEnd" />
+            <TechBubble name="Node.js" variant="backEnd" />
+            <TechBubble name="MongoDB" variant="backEnd" />
+            <TechBubble name="Cypress" variant="other" />
+            <TechBubble name="Storybook" variant="other" />
+            <TechBubble name="Sanity" variant="other" />
+          </div>
+          <LinkButton
+            label="See what else I've built"
+            onClick={() => {}}
+            variant="dark"
+          />
         </div>
         <div className={s.animation}>
           <DotLottieReact

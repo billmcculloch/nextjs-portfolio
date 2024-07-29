@@ -3,8 +3,8 @@
 import Image from "next/image";
 import s from "./Hero.module.scss";
 
-import arrow from "../../../public/arrow.svg";
 import profile from "../../../public/profile.jpg";
+import LinkButton from "../LinkButton";
 
 function Hero() {
   function scrollTo(id: string) {
@@ -41,10 +41,10 @@ function Hero() {
           </div>
           <h5>I like to build things and occasionally access the mainframe.</h5>
         </div>
-        <div className={s.cta} onClick={() => scrollTo("work")}>
-          <p> See what I've been upto</p>
-          <Image src={arrow} alt="arrow" className={s.arrow} />
-        </div>
+        <LinkButton
+          label="See what I've been upto"
+          onClick={() => scrollTo("work")}
+        />
       </div>
     </div>
   );

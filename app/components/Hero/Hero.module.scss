@@ -46,23 +46,6 @@
   }
 }
 
-.cta {
-  margin-left: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  transition: 400ms ease;
-  .arrow {
-    filter: invert(100%) sepia(2%) saturate(2456%) hue-rotate(130deg)
-      brightness(102%) contrast(95%);
-  }
-}
-
-.cta:hover {
-  transform: translate(10px, 0);
-}
-
 @media only screen and (max-width: 900px) {
   .mobileProfile {
     display: block;
