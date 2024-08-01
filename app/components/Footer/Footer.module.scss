@@ -1,19 +1,31 @@
 .wrapper {
+  background-image: linear-gradient(
+    0deg,
+    rgba(12, 10, 52, 1) 17%,
+    rgba(16, 16, 84, 1) 88%
+  );
   display: flex;
   flex-direction: column;
-  padding: 80px 45px 20vh 45px;
+  padding: 100px 45px 20vh 45px;
   .container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 120px;
-    flex-wrap: wrap !important;
     padding-top: 50px;
-    @media screen and (max-width: 800px) {
-      gap: 40px;
-      flex-direction: column;
-    }
     div {
       width: fit-content;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    padding: 80px 40px 10vh 20px;
+
+    .container {
+      gap: 0px;
+      justify-content: space-between;
     }
   }
 }

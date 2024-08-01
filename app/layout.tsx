@@ -12,7 +12,7 @@ const body = Poppins({
   weight: "300",
   subsets: ["latin"],
   variable: "--font-body",
-  fallback: ["system-ui", "arial"],
+  fallback: ["arial"],
 });
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${body.variable} font-sans`}>{children}</body>
+      <body className={body.variable}>{children}</body>
     </html>
   );
 }

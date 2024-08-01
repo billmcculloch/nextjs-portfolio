@@ -2,7 +2,7 @@ import s from "./Work.module.scss";
 import Project from "../Project";
 import broadoaks from "../../../public/broadoaks.png";
 import roady from "../../../public/roady.png";
-import portfolio from "../../../public/portfolio.png";
+import portfolio from "../../../public/next-portfolio.png";
 
 function Work() {
   return (

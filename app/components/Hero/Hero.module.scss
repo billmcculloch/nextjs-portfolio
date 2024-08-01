@@ -1,4 +1,5 @@
 .wrapper {
+  display: flex;
   height: 100vh;
   padding: 0px 45px;
   background-image: linear-gradient(
@@ -11,8 +12,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-top: 50px;
+  justify-content: space-between;
+  margin: 8vh 0px;
 }
 
 .mobileProfile {
@@ -23,10 +24,10 @@
 
 .text {
   display: flex;
-  gap: 30px;
+  gap: 60px;
   flex-direction: column;
   h5 {
-    padding-right: 40%;
+    padding-right: 30%;
   }
 }
 
@@ -50,14 +51,16 @@
   .mobileProfile {
     display: block;
   }
-
   .wrapper {
-    padding-bottom: 45px;
+    padding: 0px 20px;
+  }
+  .container {
+    margin: 4vh 0px;
   }
 
   .hero {
     h1 {
-      font-size: 3.5em !important;
+      font-size: 3.75em !important;
     }
     .profile {
       display: none;
