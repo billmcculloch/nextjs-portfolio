@@ -56,6 +56,8 @@
   }
   .container {
     margin: 4vh 0px;
+    gap: 30px;
+    justify-content: flex-start;
   }
 
   .hero {
@@ -67,7 +69,7 @@
     }
   }
   .text {
-    gap: 30px;
+    gap: 20px;
     h5 {
       padding-right: 0;
     }
